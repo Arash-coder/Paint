@@ -17,14 +17,17 @@ body {
 .header {
   background-color: #001d3d;
   color: white;
-  padding: 10px 0px;
+  padding: 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
 }
 .header_title {
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Alkatra', cursive;
+  color: #ffd60a;
+  /* letter-spacing: 3px; */
 }
 .header_menu {
   padding-right: 20px;
