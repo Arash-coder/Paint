@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>برنامه نقاشی</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="menu_toggle" class="header_menu"></div>
+      <div class="header_title">برنامه نقاشی</div>
+      <div></div>
+    </header>
+    <div class="body">
+      <div id="side_bar" class="side_bar">
+        <h2>
+          شکل ها
+          <label class="fill_color">
+            شکل ها تو پر شود؟
+            <input type="checkbox" id="fill_color" />
+          </label>
+        </h2>
+        <div class="shape" id="rectangle">
+          <p>مربع</p>
+          <span class="material-symbols-outlined"> crop_square </span>
+        </div>
+        <div class="shape" id="circle">
+          <p>دایره</p>
+          <span class="material-symbols-outlined">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="shape" id="triangle">
+          <p>مثلث</p>
+          <span class="material-symbols-outlined"> change_history </span>
+        </div>
+        <h2 class="side_bar_title">امکانات</h2>
+        <div class="shape shape_active" id="brush">
+          <p>قلم مو</p>
+          <span class="material-symbols-outlined"> brush </span>
+        </div>
+        <div class="shape" id="eraser">
+          <p>پاک کن</p>
+          <span class="material-symbols-outlined"> auto_fix_normal </span>
+        </div>
+        <div class="shape_range">
+          <p>اندازه قلم</p>
+          <input type="range" min="1" max="30" value="5" id="brush_size" />
+        </div>
+        <h2 class="side_bar_title">رنگ ها</h2>
+        <div class="shape_color">
+          <div style="background-color: black" class="color color_active"></div>
+          <div style="background-color: dodgerblue" class="color"></div>
+          <div style="background-color: yellow" class="color"></div>
+          <div class="custom_color">
+            <label class="color input_color">
+              <input type="color" id="color_picker" />
+            </label>
+            <p>رنگ دلخواه</p>
+          </div>
+        </div>
+        <div>
+          <button class="button clear_button">پاک کردن</button>
+        </div>
+        <div>
+          <button class="button save_button">ذخیره به عنوان عکس</button>
+        </div>
+      </div>
+      <div id="body_paint" class="body_paint">
+        <canvas id="canvas" class="canvas"></canvas>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/app.js"></script>
+</html>
